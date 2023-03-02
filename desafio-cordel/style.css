@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family= Passion +One & display=swap');
+
+@font-face {
+    font-family: face;
+    src: url(fontes/Sriracha-Regular.ttf);
+}
+
+/* Configuração das variaveis */
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursiva;
+}
+
+
+/* /configuração global */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* configuração das ancoras e links */
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: var(--fonte1);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Configuração do corpo */
+body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+/* Configuração do cabeçalho */
+header{
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps; 
+    /*
+    Caso queira outra forma
+    de colocar toda a palavra 
+    em lestra maiuscula 
+    pode-se usar a formatação:
+    (text-transform: uppercase;).
+    */
+    font-family: var(--fonte2);
+    font-size: 10vw;
+    
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+/* Configuração da sessão */
+section {
+    display: block;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: face;
+    src: url(fontes/Sriracha-Regular.ttf);
+    font-size: 3.5vw;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+}
+section.imagem > p {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.507);
+    text-shadow: 1px 1px 0px black;
+    max-height: 700px;
+    max-width: 600px;
+}
+
+/* Configuração do rodapé */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: var(--fonte1);
+    text-align: center;
+}
+
+
